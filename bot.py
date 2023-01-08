@@ -20,6 +20,7 @@ class aclient(discord.Client):
       self.added = True
     await client.change_presence(status=discord.Status.online, activity=discord.Game(name="ellicode.com"))
     print(f"Say hi to {self.user}!")
+    print("Ready")
     
 
 client = aclient()

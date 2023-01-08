@@ -1,9 +1,6 @@
-import os
-import dotenv
+import config
 import discord
 from enum import Enum
-
-dotenv.load_dotenv()
 
 # This will load the permissions the bot has been granted in the previous configuration
 intents = discord.Intents.default()
@@ -89,4 +86,4 @@ async def panel(interaction: discord.Interaction, panel : panels):
 
 
 # add the token of your bot
-client.run(os.getenv('TOKEN'))
+client.run(config.token)
